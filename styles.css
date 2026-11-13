@@ -186,12 +186,16 @@ main{position:relative;z-index:1}
 @media(max-width:600px){
   .mobile-lyrics{display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:2px;min-height:132px;padding:8px 3px;border-bottom:1px solid #444;overflow:visible;flex:none}
   .mobile-lyrics .mobile-lyric-float{position:relative!important;inset:auto!important;width:100%;max-width:none!important;flex:0 0 auto;padding:2px 4px;text-align:center!important;overflow-wrap:anywhere;white-space:normal;--lyric-tilt:0deg}
+  .mobile-lyrics .lyric-float{font-family:"Author",Arial,sans-serif;--lyric-tilt:0deg!important;animation:mobile-lyric-enter .48s ease both}
+  .mobile-lyrics .lyric-float.is-leaving{transform:none!important}
   .mobile-lyrics .lyric-float{font-size:clamp(14px,4vw,18px)!important;line-height:1.2}
   .mobile-lyrics .lyric-float--emphasized{font-size:clamp(18px,5.6vw,25px)!important}
   .mobile-lyrics .lyric-group-float{font-size:clamp(18px,5.6vw,25px)!important}
   .mobile-lyrics .track-title-float{font-size:clamp(22px,8vw,32px)!important}
   .mobile-lyrics .lyric-persistent-phrase{font-size:1.2em}
 }
+
+@keyframes mobile-lyric-enter{from{opacity:0;transform:translateY(8px)}to{opacity:.92;transform:translateY(0)}}
 
 
 /* Outlined skip controls and a centered two-bar pause symbol. */
@@ -230,4 +234,7 @@ main{position:relative;z-index:1}
 .mini-label,.playlist-heading,.video-settings,.album-year{font-family:"Clash Grotesk",Arial,sans-serif;font-weight:500;letter-spacing:.05em}
 .playlist-heading{font-weight:600}
 .video-settings-controls{font-family:"Clash Grotesk",Arial,sans-serif;font-weight:500;letter-spacing:.05em}
+
+/* Author typeface for mobile in-player lyrics. */
+@font-face{font-family:"Author";src:url("assets/fonts/Author-Variable.woff2") format("woff2");font-style:normal;font-weight:200 700;font-display:swap}
 
