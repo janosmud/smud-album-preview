@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="SMUD — am_ende_bin_ich_da. Albumplayer.">
+  <title>SMUD — am_ende_bin_ich_da</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <video id="background-video" class="background-video" muted playsinline preload="none" aria-hidden="true"></video>
+  <video id="background-video-next" class="background-video" muted playsinline preload="none" aria-hidden="true"></video>
+  <div class="video-tint" aria-hidden="true"></div>
+  <main>
+    <div class="lyrics-backdrop" id="lyrics-backdrop" aria-hidden="true"></div>
+    <section class="player" aria-label="Albumplayer">
+      <div class="player-heading">
+        <span class="player-artist">SMUD</span>
+        <span class="heading-rule" aria-hidden="true"></span>
+        <span class="album-name">am_ende_bin_ich_da</span>
+        <span class="album-year">ALBUM · 2025</span>
+      </div>
+
+      <div class="now-playing">
+        <div class="artwork-wrap">
+          <div class="vinyl" aria-hidden="true"><div class="vinyl-center" id="vinyl-center">01</div></div>
+          <div class="artwork"><img class="cover-image" src="assets/Album%20Cover.png" alt="Albumcover am_ende_bin_ich_da von SMUD"></div>
+        </div>
+        <div class="track-meta">
+          <span class="mini-label">JETZT LÄUFT</span>
+          <h2 id="now-title">Wähle einen Track</h2>
+          <p id="now-state">ALBUM · 9 TRACKS</p>
+          <div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+
+      <div class="mobile-lyrics" id="mobile-lyrics" aria-live="polite" aria-relevant="additions text"></div>
+
+      <div class="controls">
+        <div class="transport">
+          <button class="icon-button" id="prev" aria-label="Vorheriger Song" title="Vorheriger Song"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5v14"/><path d="m19 6-10 6 10 6V6Z"/></svg></button>
+          <button class="play-button" id="play" aria-label="Abspielen" title="Abspielen"><svg class="play-symbol" viewBox="0 0 20 24" aria-hidden="true"><path d="M5 3.5v17L19 12 5 3.5Z" fill="currentColor"/></svg></button>
+          <button class="like-button" id="like" type="button" aria-label="Track liken" aria-pressed="false" disabled><span aria-hidden="true">♡</span><output id="like-count">0</output></button>
+          <button class="icon-button" id="next" aria-label="Nächster Song" title="Nächster Song"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5v14"/><path d="m5 6 10 6-10 6V6Z"/></svg></button>
+        </div>
+        <div class="timeline">
+          <span class="time" id="elapsed">0:00</span>
+          <input id="seek" class="range seek" type="range" min="0" max="100" value="0" aria-label="Wiedergabeposition">
+          <span class="time" id="duration">—:——</span>
+        </div>
+        <div class="volume-row"><span class="volume-icon" aria-hidden="true">VOL</span><input id="volume" class="range volume" type="range" min="0" max="100" value="75" aria-label="Lautstärke"><span class="volume-value" id="volume-value">75</span></div>
+      </div>
+
+      <div class="playlist-heading"><span>TRACKLISTE</span><span>01 — 09</span></div>
+      <ol class="tracklist" id="tracklist" aria-label="Tracks"></ol>
+      <details class="video-settings">
+        <summary>VIDEO REACTIVE</summary>
+        <div class="video-settings-controls">
+          <label><input id="kick-detection" type="checkbox" checked> KICK</label>
+          <label><input id="snare-detection" type="checkbox" checked> SNARE</label>
+          <label class="setting-range">SENS <input id="video-sensitivity" type="range" min="0" max="100" value="15"><output id="sensitivity-value">15</output></label>
+          <label class="setting-range">GAP <input id="video-cooldown" type="range" min="500" max="3000" step="100" value="1500"><output id="cooldown-value">1.5s</output></label>
+          <button class="like-export" id="like-history-export" type="button">LIKE-VERLAUF EXPORTIEREN</button>
+        </div>
+      </details>
+    </section>
+  </main>
+  <audio id="audio" preload="metadata"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

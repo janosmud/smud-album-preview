@@ -1,0 +1,225 @@
+:root{--black:#000;--white:#fff;--red:#b8211a;--mono:"DM Mono",monospace;--sans:"Archivo",Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:4px}main{width:min(100% - 48px,1056px);margin:auto}.topbar{height:72px;border-bottom:1px solid #282828;display:flex;align-items:center;justify-content:space-between}.wordmark,.footer-brand{font-weight:700;font-size:22px;letter-spacing:-1.8px}.wordmark .dot,.footer-brand span{color:var(--red)}.top-note,.nav-link,.eyebrow,.mini-label,.album-year,.track-meta p,.playlist-heading,.player-footer,.time,.volume-icon,.volume-value,.track-num,.track-duration,.about-label,.mail-link,.site-footer>span,.site-footer>a:last-child,.cover-index,.cover-mark{font-family:var(--mono);font-size:10px;letter-spacing:.08em}.top-note{color:#777}.nav-link{font-size:9px}.nav-link span,.mail-link span{color:var(--red);margin-left:5px}.intro{padding:75px 0 48px;position:relative}.eyebrow{color:#bbb;margin:0 0 20px;display:flex;gap:9px;align-items:center}.live-dot{width:7px;height:7px;background:var(--red);border-radius:50%;display:inline-block}.intro h1{font-size:clamp(56px,10vw,108px);line-height:.84;letter-spacing:-.095em;margin:0;font-weight:700}.intro h1 span{color:var(--red)}.intro-copy{font-size:14px;line-height:1.65;color:#aaa;margin:27px 0 0}.player{max-width:620px;margin:0 auto 112px;border:1px solid var(--white);border-radius:7px;padding:0 20px 14px;position:relative}.player:before{content:"";position:absolute;inset:5px -6px -6px 5px;border:1px solid var(--red);border-radius:8px;z-index:-1}.player-heading{height:48px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #444;white-space:nowrap}.player-artist{font-size:17px;font-weight:700;letter-spacing:-1px}.heading-rule{height:16px;width:1px;background:#555}.album-name{font-family:var(--mono);font-size:10px}.album-year{color:#777;margin-left:auto;font-size:8px}.now-playing{height:192px;border-bottom:1px solid #444;display:grid;grid-template-columns:220px 1fr;align-items:center;overflow:hidden}.artwork-wrap{height:152px;width:220px;position:relative;display:flex;align-items:center}.vinyl{position:absolute;left:75px;width:151px;height:151px;border-radius:50%;background:repeating-radial-gradient(circle at center,#101010 0 2px,#202020 2.5px 3px,#101010 3.5px 5px);border:1px solid #333;display:grid;place-items:center;animation:spin 7s linear infinite;animation-play-state:paused}.vinyl.playing{animation-play-state:running}.vinyl-label{width:48px;height:48px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-weight:700;font-size:19px}.vinyl-label span{font-size:10px}.artwork{position:relative;z-index:1;width:145px;height:145px;background:var(--red);padding:12px;display:flex;flex-direction:column;justify-content:space-between}.cover-index,.cover-mark{font-size:7px}.cover-title{font-size:34px;line-height:.79;letter-spacing:-.075em;font-weight:700}.cover-title i{font-weight:400}.track-meta{height:115px;border-left:1px solid #444;padding:8px 0 8px 17px;min-width:0;display:flex;flex-direction:column;justify-content:center}.mini-label{font-size:8px;color:#888}.track-meta h2{font-size:18px;line-height:1.1;letter-spacing:-.055em;overflow-wrap:anywhere;margin:9px 0 6px}.track-meta p{font-size:8px;color:#888;margin:0}.sound-wave{display:flex;gap:3px;align-items:center;height:12px;margin-top:13px}.sound-wave i{height:4px;width:2px;background:var(--red)}.sound-wave i:nth-child(3n){height:10px}.sound-wave i:nth-child(2n){height:7px}.player.is-playing .sound-wave i{animation:wave .7s ease-in-out infinite alternate}.player.is-playing .sound-wave i:nth-child(2n){animation-delay:.3s}.player.is-playing .sound-wave i:nth-child(3n){animation-delay:.5s}.controls{padding:17px 0 14px;border-bottom:1px solid #444}.transport{display:flex;align-items:center;justify-content:center;gap:27px}.icon-button,.play-button{border:0;background:none;color:white;cursor:pointer}.icon-button{font-size:17px;padding:8px}.play-button{width:43px;height:43px;border:1px solid white;border-radius:50%;font-size:14px;display:grid;place-items:center;padding-left:3px}.play-button:hover{background:var(--red);border-color:var(--red)}.timeline{display:grid;grid-template-columns:36px 1fr 36px;gap:9px;align-items:center;margin-top:11px}.time{font-size:8px;color:#999}.time:last-child{text-align:right}.range{appearance:none;-webkit-appearance:none;height:2px;background:#444;outline:none;cursor:pointer}.range::-webkit-slider-thumb{appearance:none;width:9px;height:9px;background:var(--red);border-radius:50%}.range::-moz-range-thumb{width:9px;height:9px;border:0;background:var(--red);border-radius:50%}.volume-row{display:flex;align-items:center;justify-content:flex-end;gap:9px;margin-top:12px}.volume-icon,.volume-value{color:#999;font-size:8px}.volume{width:82px}.playlist-heading{display:flex;justify-content:space-between;padding:14px 0 9px;color:#999;font-size:8px}.tracklist{padding:0;margin:0;list-style:none;max-height:172px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--red) transparent}.tracklist::-webkit-scrollbar{width:8px}.tracklist::-webkit-scrollbar-track{background:transparent;border-radius:999px}.tracklist::-webkit-scrollbar-thumb{background:var(--red);border:2px solid transparent;background-clip:padding-box;border-radius:999px;min-height:24px}.tracklist::-webkit-scrollbar-button{display:none;width:0;height:0}.tracklist::-webkit-scrollbar-corner{background:transparent}.track-row{height:40px;border-top:1px solid #252525;display:grid;grid-template-columns:32px 1fr 42px;align-items:center;padding:0 6px 0 2px;cursor:pointer;transition:color .15s}.track-row:hover{background:#0c0c0c}.track-row.active{color:var(--red)}.track-row:focus-visible{outline:2px solid var(--red);outline-offset:-2px}.track-num,.track-duration{font-size:9px;color:#777}.track-row.active .track-num,.track-row.active .track-duration{color:var(--red)}.track-title{font-size:12px;font-weight:600;letter-spacing:-.02em}.track-duration{text-align:right;font-size:8px}.player-footer{border-top:1px solid #444;margin-top:8px;padding-top:12px;display:flex;justify-content:space-between;color:#777;font-size:7px}.about{border-top:1px solid #282828;padding:45px 0 68px;display:grid;grid-template-columns:1fr 1fr;gap:40px}.about-label{color:#999;font-size:9px}.red-line{width:19px;height:1px;background:var(--red);display:inline-block;vertical-align:middle;margin:0 7px 3px 0}.about-copy{max-width:390px}.about-copy h2{font-size:clamp(34px,5vw,52px);line-height:.95;letter-spacing:-.075em;margin:0 0 20px}.about-copy h2 em{font-weight:400;color:var(--red)}.about-copy p{font-size:13px;line-height:1.8;color:#999;margin:0;max-width:360px}.mail-link{display:inline-block;border-bottom:1px solid #444;padding:16px 0 7px;margin-top:17px;font-size:9px}.site-footer{min-height:63px;border-top:1px solid #282828;display:flex;align-items:center;justify-content:space-between}.footer-brand{font-size:17px}.site-footer>span,.site-footer>a:last-child{color:#777;font-size:8px}.site-footer a:last-child:hover,.nav-link:hover{color:var(--red)}@keyframes spin{to{transform:rotate(360deg)}}@keyframes wave{to{transform:scaleY(.35)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}@media(max-width:600px){main{width:calc(100% - 36px)}.topbar{height:62px}.top-note{font-size:8px}.intro{padding:62px 0 37px}.intro h1{font-size:clamp(55px,14vw,82px)}.intro-copy{font-size:13px;margin-top:20px}.player{width:calc(100% - 8px);padding:0 13px 12px;margin-bottom:78px}.player-heading{gap:8px}.player-artist{font-size:15px}.album-name{font-size:8px}.album-year{font-size:7px}.now-playing{height:167px;grid-template-columns:minmax(0,1fr) minmax(0,.9fr)}.artwork-wrap{width:100%;height:136px}.artwork{width:126px;height:126px;padding:10px}.cover-title{font-size:30px}.vinyl{left:65px;width:133px;height:133px}.vinyl-label{width:42px;height:42px}.track-meta{height:105px;padding-left:12px}.track-meta h2{font-size:16px}.tracklist{max-height:168px}.about{grid-template-columns:1fr;gap:25px;padding:35px 0 53px}.about-copy{margin-left:25px}.site-footer>span{display:none}.site-footer{min-height:58px}}@media(max-width:360px){main{width:calc(100% - 26px)}.player{padding-inline:10px}.album-name{font-size:7px}.album-year{letter-spacing:0}.artwork{width:116px;height:116px}.cover-title{font-size:28px}.vinyl{left:59px;width:125px;height:125px}.artwork-wrap{height:130px}}
+:root{--unused:0}main{width:100%;min-height:100vh;min-height:100svh;display:grid;place-items:center;padding:20px}.player{width:min(100%,620px);margin:0 auto}.artwork{padding:0}.cover-image{display:block;width:100%;height:100%;object-fit:cover}@media(max-width:600px){main{padding:18px}.player{margin:0 auto}}
+
+/* Player chassis, vinyl center, and added vertical breathing room */
+main{width:100%;min-height:100vh;min-height:100svh;display:grid;place-items:center;padding:20px}
+.player{width:min(100%,620px);margin:0 auto;padding-bottom:24px;isolation:isolate}
+.player:before{inset:-8px;border-radius:10px;z-index:-1}
+.now-playing{height:205px}
+.controls{padding-top:20px;padding-bottom:18px}
+.track-row{height:43px}
+.vinyl-center{width:15px;height:15px;border:1px solid #555;border-radius:50%;background:#111}
+.artwork{padding:0;overflow:hidden}
+.cover-image{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:600px){main{padding:18px}.player{width:calc(100% - 8px);margin:0 auto;padding-bottom:21px}.now-playing{height:180px}.track-row{height:42px}}
+
+/* Portrait player and clearer spinning record */
+.player{width:min(100%,420px);min-height:680px;display:flex;flex-direction:column}
+.player-heading{flex:none}
+.now-playing{height:225px;flex:none;grid-template-columns:200px minmax(0,1fr)}
+.artwork-wrap{width:200px;height:145px;flex:none;overflow:hidden}
+.vinyl{z-index:0;left:55px;width:145px;height:145px;overflow:hidden}
+.vinyl:before{content:"";position:absolute;inset:0;border-radius:50%;background:repeating-linear-gradient(to bottom,transparent 0 12px,rgba(184,33,26,.95) 12px 14px,transparent 14px 27px);pointer-events:none}
+.vinyl-center{z-index:1;width:13px;height:13px;border:1px solid #555;border-radius:50%;background:#111}
+.artwork{z-index:1;width:145px;height:145px;flex:none}
+.controls{flex:none;padding-top:23px;padding-bottom:21px}
+.play-button{padding:0;background:var(--red);border:1px solid var(--red);color:#fff;display:grid;place-items:center;line-height:1}
+.play-button:hover{background:#d12a22;border-color:#d12a22}
+.play-button span{display:block;line-height:1}
+#play[aria-label="Abspielen"] span{transform:translateX(1px)}
+@media(max-width:600px){.player{width:calc(100% - 8px);min-height:670px}.now-playing{height:205px;grid-template-columns:minmax(0,175px) minmax(0,1fr)}.artwork-wrap{width:175px;height:130px}.vinyl{left:45px;width:130px;height:130px}.artwork{width:126px;height:126px}.track-meta{padding-left:10px}.track-meta h2{font-size:15px}}
+@media(max-width:360px){.now-playing{grid-template-columns:minmax(0,155px) minmax(0,1fr)}.artwork-wrap{width:155px}.vinyl{left:38px;width:116px;height:116px}.artwork{width:112px;height:112px}.track-meta h2{font-size:14px}}
+
+/* Radial vinyl rays and live frequency bars */
+.vinyl:before{background:repeating-conic-gradient(from 0deg,rgba(184,33,26,.2) 0deg 1.2deg,transparent 1.2deg 13deg)}
+.player.is-playing .sound-wave i{animation:none!important}
+.vinyl-center{width:38px;height:38px;border:0;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:0}
+
+/* Reveal more of the record and its numbered center label */
+@media(min-width:601px){.now-playing{grid-template-columns:230px minmax(0,1fr)}.artwork-wrap{width:230px}.vinyl{left:85px;width:145px;height:145px}.artwork{width:145px;height:145px}}
+@media(max-width:600px){.now-playing{grid-template-columns:minmax(0,195px) minmax(0,1fr)}.artwork-wrap{width:195px}.vinyl{left:75px;width:120px;height:120px}.artwork{width:115px;height:115px}}
+@media(max-width:360px){.now-playing{grid-template-columns:minmax(0,175px) minmax(0,1fr)}.artwork-wrap{width:175px}.vinyl{left:65px;width:110px;height:110px}.artwork{width:112px;height:112px}}
+
+/* Frequency-band meters from 50 Hz bass to 10 kHz treble */
+.sound-wave{gap:2px}
+.sound-wave i{width:3px}
+@media(min-width:601px){.vinyl{left:72px}}
+@media(max-width:600px){.vinyl{left:55px}}
+@media(max-width:360px){.vinyl{left:57px}}
+
+.sound-wave i,.sound-wave i:nth-child(n){width:2px;height:0;transition:none}
+
+.lyrics-toggle{width:100%;border:0;border-top:1px solid #444;border-bottom:1px solid #444;background:transparent;color:#aaa;display:flex;align-items:center;justify-content:space-between;padding:13px 2px;cursor:pointer;font-family:var(--mono);font-size:8px;letter-spacing:.08em}
+.lyrics-toggle:hover,.lyrics-toggle[aria-expanded="true"]{color:#fff}
+.lyrics-toggle:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.lyrics-panel{max-height:142px;overflow:auto;padding:12px 8px;border-bottom:1px solid #333;scrollbar-width:thin;scrollbar-color:var(--red) #222}
+.lyrics-panel[hidden]{display:none}
+.lyrics-lines{display:flex;flex-direction:column;gap:9px;min-height:20px;color:#777;font-size:12px;line-height:1.45}
+.lyrics-line{transition:color .15s ease,font-size .15s ease}
+.lyrics-line.active{color:var(--red);font-size:14px;font-weight:600}
+
+/* Fixed, audio-reactive lyric backdrop; it never participates in page layout */
+main{position:relative;isolation:isolate}
+.player{position:relative;z-index:1;background:rgba(0,0,0,.62)}
+.lyrics-backdrop{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;display:grid;place-items:center}
+.lyrics-backdrop-line{position:absolute;left:50%;width:min(96vw,1160px);overflow:hidden;text-overflow:clip;white-space:nowrap;text-align:center;font-size:clamp(22px,5.2vw,62px);font-weight:700;line-height:1.1;letter-spacing:-.055em;transition:opacity .18s ease,color .18s ease;will-change:transform}
+.lyrics-backdrop-line--previous{top:calc(50% - 1.25em);transform:translate(-50%,-50%);color:rgba(255,255,255,.13);opacity:.7}
+.lyrics-backdrop-line--current{top:50%;transform:translate(calc(-50% + var(--lyric-shift,0px)),calc(-50% + var(--lyric-lift,0px))) scale(var(--lyric-scale,1));color:rgba(184,33,26,.4);opacity:1}
+.lyrics-backdrop-line--next{top:calc(50% + 1.25em);transform:translate(-50%,-50%);color:rgba(255,255,255,.13);opacity:.7}
+@media(prefers-reduced-motion:reduce){.lyrics-backdrop-line--current{transform:translate(-50%,-50%)}}
+
+/* Make the current timestamped line readable behind the fixed player */
+.player{background:rgba(0,0,0,.36)}
+.lyrics-backdrop-line{white-space:nowrap;overflow:hidden;max-width:96vw;will-change:auto;transition:opacity .16s ease}
+.lyrics-backdrop-line--previous,.lyrics-backdrop-line--next{display:none}
+.lyrics-backdrop-line--current{color:rgba(184,33,26,.72);font-size:clamp(38px,9vw,112px);opacity:1;transform:translate(-50%,-50%);will-change:auto}
+
+/* Wider handset shell and full, wrapped lyric faces on a fixed 3D stage */
+.player{width:min(100%,480px)}
+.track-title,.track-meta h2{white-space:nowrap}
+.track-meta h2{overflow:hidden;text-overflow:clip}
+.lyrics-backdrop{position:fixed;inset:0;z-index:0;display:grid;place-items:center;overflow:hidden;pointer-events:none;perspective:1000px}
+.lyrics-cube{width:min(94vw,1200px);display:grid;place-items:center;transform-style:preserve-3d;perspective:1000px}
+.lyrics-face{grid-area:1/1;width:100%;padding:16px 2vw;color:rgba(184,33,26,.88);font-size:clamp(30px,7vw,92px);font-weight:700;letter-spacing:-.055em;line-height:1.06;text-align:center;white-space:normal;overflow-wrap:anywhere;word-break:normal;backface-visibility:hidden;transform-style:preserve-3d}
+.lyrics-face--current{transform:rotateX(0deg);transform-origin:center bottom}
+.lyrics-face--incoming{visibility:hidden;transform:rotateX(90deg);transform-origin:center top}
+.lyrics-cube.is-transitioning .lyrics-face--current{animation:lyric-fold-away .48s cubic-bezier(.68,0,.35,1) both}
+.lyrics-cube.is-transitioning .lyrics-face--incoming{visibility:visible;animation:lyric-fold-in .48s cubic-bezier(.68,0,.35,1) both}
+@keyframes lyric-fold-away{to{transform:rotateX(-90deg);opacity:0}}
+@keyframes lyric-fold-in{from{transform:rotateX(90deg);opacity:0}to{transform:rotateX(0deg);opacity:1}}
+.player{background:rgba(0,0,0,.22)}
+@media(max-width:600px){main{padding:10px}.player{width:100%;padding-left:11px;padding-right:11px}.now-playing{grid-template-columns:minmax(0,175px) minmax(0,1fr)}.artwork-wrap{width:175px}.vinyl{left:55px;width:120px;height:120px}.artwork{width:115px;height:115px}.track-meta{padding-left:8px}.track-meta h2{font-size:14px}}
+@media(max-width:360px){.now-playing{grid-template-columns:minmax(0,160px) minmax(0,1fr)}.artwork-wrap{width:160px}.vinyl{left:50px;width:110px;height:110px}.artwork{width:108px;height:108px}.track-meta h2{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.lyrics-cube.is-transitioning .lyrics-face--current,.lyrics-cube.is-transitioning .lyrics-face--incoming{animation-duration:.01ms}}
+
+/* Floating lyric notes stay outside the phone player and never affect layout */
+.lyrics-backdrop{position:fixed;inset:0;z-index:2;overflow:hidden;pointer-events:none;perspective:700px}
+.lyric-float{position:fixed;z-index:2;display:block;width:max-content;max-width:min(82vw,320px);padding:2px 4px;color:rgba(184,33,26,.92);font-family:"Space Grotesk",Arial,sans-serif;font-size:clamp(12px,1.45vw,16px);font-weight:600;line-height:1.3;letter-spacing:.015em;text-align:center;white-space:normal;overflow-wrap:anywhere;pointer-events:none;transform-origin:center center;transition:opacity .22s ease,transform .22s ease;animation:lyric-float-in .38s cubic-bezier(.2,.8,.2,1) both}
+.lyric-float.is-leaving{opacity:0;transform:rotateX(-40deg) translateY(-4px)}
+.lyric-context{transition:opacity .7s ease}
+.lyric-context.is-hidden-context{opacity:0}
+@keyframes lyric-float-in{from{opacity:0;transform:rotateX(65deg) translateY(8px)}to{opacity:.92;transform:rotateX(0) translateY(0)}}
+@media(max-width:600px){.lyric-float{max-width:82vw;font-size:12px}}
+
+/* Keep lyric notes to the sides and remove the red offset frame */
+.player:before{display:none}
+.lyric-float{max-width:320px;font-size:clamp(12px,1.45vw,17px);overflow-wrap:anywhere}
+@media(max-width:600px){.lyric-float{font-size:12px}}
+.lyric-float{font-size:clamp(14px,1.65vw,19px)}
+@media(max-width:600px){.lyric-float{font-size:14px}}
+
+/* Muted monochrome background footage */
+.background-video,.video-tint{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
+.background-video{z-index:0;object-fit:cover;filter:grayscale(1) brightness(.68) contrast(1.08);opacity:0;transition:opacity .65s ease}
+.background-video.is-visible{opacity:.52}
+.video-tint{z-index:0;background:rgba(0,0,0,.48)}
+main{position:relative;z-index:1}
+.lyric-float{animation:lyric-float-in .42s ease-out both;transition:opacity .42s ease,transform .42s ease}
+
+/* Compact controls for the single-clip audio reactive video behavior */
+.video-settings{border-bottom:1px solid #444;font-family:var(--mono);font-size:8px;letter-spacing:.06em;color:#aaa}
+.video-settings summary{padding:12px 2px;cursor:pointer;list-style:none}
+.video-settings summary::-webkit-details-marker{display:none}
+.video-settings summary::after{content:"+";float:right;color:var(--red)}
+.video-settings[open] summary::after{content:"−"}
+.video-settings-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:0 2px 13px}
+.video-settings-controls label{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.video-settings-controls input[type="checkbox"]{accent-color:var(--red);margin:0}
+.video-settings-controls .setting-range{gap:6px}
+.video-settings-controls input[type="range"]{width:64px;accent-color:var(--red)}
+.video-settings-controls output{min-width:26px;color:#fff;text-align:right}
+@media(max-width:360px){.video-settings-controls{gap:9px}.video-settings-controls input[type="range"]{width:52px}}
+
+/* Instant video cuts: the standby layer is ready before it replaces the active one */
+.background-video{transition:none}
+
+/* Smooth, filled playback progress with a larger seek target on hover */
+#seek.range{height:16px;padding:0;background:transparent;touch-action:none;transition:transform .16s ease}
+#seek.range::-webkit-slider-runnable-track{height:3px;border-radius:3px;background:linear-gradient(to right,var(--red) 0 var(--seek-progress,0%),#444 var(--seek-progress,0%) 100%);transition:height .16s ease}
+#seek.range::-moz-range-track{height:3px;border-radius:3px;background:#444;transition:height .16s ease}
+#seek.range::-moz-range-progress{height:3px;border-radius:3px;background:var(--red);transition:height .16s ease}
+#seek.range::-webkit-slider-thumb{width:10px;height:10px;margin-top:-3.5px;background:var(--red);opacity:0;transition:opacity .16s ease,transform .16s ease}
+#seek.range::-moz-range-thumb{width:10px;height:10px;opacity:0;transition:opacity .16s ease,transform .16s ease}
+#seek.range:hover::-webkit-slider-runnable-track,#seek.range:focus-visible::-webkit-slider-runnable-track{height:6px}
+#seek.range:hover::-moz-range-track,#seek.range:focus-visible::-moz-range-track,#seek.range:hover::-moz-range-progress,#seek.range:focus-visible::-moz-range-progress{height:6px}
+#seek.range:hover::-webkit-slider-thumb,#seek.range:focus-visible::-webkit-slider-thumb,#seek.range:hover::-moz-range-thumb,#seek.range:focus-visible::-moz-range-thumb{opacity:1;transform:scale(1.1)}
+
+/* Taller handset silhouette */
+.player{min-height:760px;padding-bottom:32px}
+.now-playing{height:250px}
+@media(max-width:600px){.player{min-height:745px;padding-bottom:28px}.now-playing{height:225px}}
+.video-settings{margin-top:auto;border-top:1px solid #444;border-bottom:0}
+.video-settings summary{padding-top:15px}
+.transport{position:relative}
+.like-button{position:absolute;right:0;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;gap:5px;padding:6px 2px;border:0;background:transparent;color:#aaa;cursor:pointer;font-family:var(--mono);font-size:10px}
+.like-button>span{font-family:Arial,sans-serif;font-size:25px;line-height:1;color:#fff;transition:color .16s ease,transform .16s ease}
+.like-button[aria-pressed="true"]{color:var(--red)}
+.like-button[aria-pressed="true"]>span{color:var(--red);transform:scale(1.08)}
+.like-button:disabled{opacity:.4;cursor:default}
+.like-export{border:0;background:transparent;color:#888;padding:3px 0;cursor:pointer;font-family:var(--mono);font-size:8px;letter-spacing:.06em}
+.like-export:hover{color:#fff}
+#like,#like-history-export{display:none!important}
+
+/* Varied lyric entrances, typography, and restrained beat accents */
+.lyric-float{transition:opacity 1.2s ease,transform .9s ease}
+.lyric-float--slide-left{animation:lyric-enter-left .48s cubic-bezier(.2,.8,.2,1) both}
+.lyric-float--slide-right{animation:lyric-enter-right .48s cubic-bezier(.2,.8,.2,1) both}
+.lyric-float--rise{animation:lyric-enter-rise .48s cubic-bezier(.2,.8,.2,1) both}
+.lyric-float--turn{animation:lyric-enter-turn .55s cubic-bezier(.2,.8,.2,1) both}
+.lyric-float--pop{animation:lyric-enter-pop .4s cubic-bezier(.2,.8,.2,1) both}
+.lyric-float--blur{animation:lyric-enter-blur .62s cubic-bezier(.2,.8,.2,1) both}
+.lyric-float--flip{animation:lyric-enter-flip .58s cubic-bezier(.2,.8,.2,1) both}
+@keyframes lyric-enter-left{from{opacity:0;transform:translateX(-22px) rotate(calc(var(--lyric-tilt,0deg) - 2deg))}to{opacity:.92;transform:translateX(0) rotate(var(--lyric-tilt,0deg))}}
+@keyframes lyric-enter-right{from{opacity:0;transform:translateX(22px) rotate(calc(var(--lyric-tilt,0deg) + 2deg))}to{opacity:.92;transform:translateX(0) rotate(var(--lyric-tilt,0deg))}}
+@keyframes lyric-enter-rise{from{opacity:0;transform:translateY(14px) rotate(var(--lyric-tilt,0deg))}to{opacity:.92;transform:translateY(0) rotate(var(--lyric-tilt,0deg))}}
+@keyframes lyric-enter-turn{from{opacity:0;transform:perspective(500px) rotateY(-55deg) rotate(var(--lyric-tilt,0deg))}to{opacity:.92;transform:perspective(500px) rotateY(0) rotate(var(--lyric-tilt,0deg))}}
+@keyframes lyric-enter-pop{from{opacity:0;transform:scale(.78) rotate(var(--lyric-tilt,0deg))}to{opacity:.92;transform:scale(1) rotate(var(--lyric-tilt,0deg))}}
+@keyframes lyric-enter-blur{from{opacity:0;filter:blur(7px);transform:scale(1.04) rotate(var(--lyric-tilt,0deg))}to{opacity:.92;filter:blur(0);transform:scale(1) rotate(var(--lyric-tilt,0deg))}}
+@keyframes lyric-enter-flip{from{opacity:0;transform:perspective(420px) rotateX(72deg) translateY(8px) rotate(var(--lyric-tilt,0deg))}to{opacity:.92;transform:perspective(420px) rotateX(0) translateY(0) rotate(var(--lyric-tilt,0deg))}}
+@media(prefers-reduced-motion:reduce){.lyric-float--slide-left,.lyric-float--slide-right,.lyric-float--rise,.lyric-float--turn,.lyric-float--pop,.lyric-float--blur,.lyric-float--flip{animation:lyric-float-in .01ms both}}
+
+/* Vinyl rotation follows the media element's eased playback rate. */
+.vinyl{animation:none!important;will-change:transform}
+
+/* On narrow screens, lyrics use a dedicated in-player area instead of off-screen side placement. */
+.mobile-lyrics{display:none}
+@media(max-width:600px){
+  .mobile-lyrics{display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:2px;min-height:132px;padding:8px 3px;border-bottom:1px solid #444;overflow:visible;flex:none}
+  .mobile-lyrics .mobile-lyric-float{position:relative!important;inset:auto!important;width:100%;max-width:none!important;flex:0 0 auto;padding:2px 4px;text-align:center!important;overflow-wrap:anywhere;white-space:normal;--lyric-tilt:0deg}
+  .mobile-lyrics .lyric-float{font-size:clamp(14px,4vw,18px)!important;line-height:1.2}
+  .mobile-lyrics .lyric-float--emphasized{font-size:clamp(18px,5.6vw,25px)!important}
+  .mobile-lyrics .lyric-group-float{font-size:clamp(18px,5.6vw,25px)!important}
+  .mobile-lyrics .track-title-float{font-size:clamp(22px,8vw,32px)!important}
+  .mobile-lyrics .lyric-persistent-phrase{font-size:1.2em}
+}
+
+
+/* Outlined skip controls and a centered two-bar pause symbol. */
+.icon-button svg{display:block;width:22px;height:22px}
+.play-button{padding-left:0}
+.play-symbol{display:block;width:15px;height:18px;transform:translateX(-1.5px)}
+.pause-symbol{display:flex!important;width:18px;height:18px;align-items:center;justify-content:center;gap:4px;transform:none!important}
+.pause-symbol i{display:block;width:3px;height:13px;background:#fff;border-radius:0}
+
+
+#prev{margin-right:4px}
+#next{margin-left:4px}
+
+
+.play-button{transition:background-color .1s ease,border-color .1s ease}
+.play-button:active,.play-button.is-pressed{background:#781711;border-color:#781711}
+
+
+.track-title-float{z-index:3;color:rgba(184,33,26,.98);font-weight:700;line-height:1.05;letter-spacing:-.055em}
+
+
+.track-title-float.lyric-float--slide-left,.track-title-float.lyric-float--slide-right,.track-title-float.lyric-float--rise,.track-title-float.lyric-float--turn,.track-title-float.lyric-float--pop,.track-title-float.lyric-float--blur,.track-title-float.lyric-float--flip{animation-duration:.38s}
+.track-title-float.is-leaving{transition:opacity .25s ease,transform .25s ease;transform:translateY(-5px) scale(.98)}
+
+
+.lyric-group-float{white-space:normal}
+.lyric-group-content{display:inline-grid;max-width:100%;text-align:left}
+.lyric-group-placeholder,.lyric-group-visible{grid-area:1/1}
+.lyric-group-placeholder{visibility:hidden}
+.lyric-group-visible{max-width:100%;overflow-wrap:anywhere}
+
