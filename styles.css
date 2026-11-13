@@ -223,3 +223,11 @@ main{position:relative;z-index:1}
 .lyric-group-placeholder{visibility:hidden}
 .lyric-group-visible{max-width:100%;overflow-wrap:anywhere}
 
+/* Self-hosted Clash Grotesk for small section labels and controls. */
+@font-face{font-family:"Clash Grotesk";src:url("assets/fonts/ClashGrotesk-Regular.otf") format("opentype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Clash Grotesk";src:url("assets/fonts/ClashGrotesk-Medium.otf") format("opentype");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:"Clash Grotesk";src:url("assets/fonts/ClashGrotesk-Semibold.otf") format("opentype");font-style:normal;font-weight:600;font-display:swap}
+.mini-label,.playlist-heading,.video-settings,.album-year{font-family:"Clash Grotesk",Arial,sans-serif;font-weight:500;letter-spacing:.05em}
+.playlist-heading{font-weight:600}
+.video-settings-controls{font-family:"Clash Grotesk",Arial,sans-serif;font-weight:500;letter-spacing:.05em}
+
